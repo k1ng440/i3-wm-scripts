@@ -70,4 +70,4 @@ if [ -e "$foreground" ]; then
     done
 fi
 
-i3lock -f -e -t -i "$screenshot_blur"
+i3lock -n -f -e -t -i "$screenshot_blur"
