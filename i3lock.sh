@@ -13,7 +13,7 @@ foreground_image_path="$1"
 
 screenshot="/tmp/screenshot.png"
 screenshot_blur="/tmp/screenshot_blur.png"
-import -window root "$screenshot"
+scrot -o "$screenshot"
 convert "$screenshot" -filter Gaussian -scale 10% -scale 1000% -blur 0x8 "$screenshot_blur"
 
 [ -e "$foreground_image_path" ] || \
